@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #181A1B;
+  color: whitesmoke;
 }
 
 :root {
@@ -15,6 +17,11 @@ body {
   font-family: var(--main-font-family);
   display: inline-block;
   padding-top: 70px;
+}
+
+/* tools */
+.show-whitespace {
+  white-space: pre-wrap;
 }
 
 /* navbar css */
@@ -41,7 +48,13 @@ body {
 .nav-links a {
   text-decoration: none;
   font-size: 20pt;
-  color: black;
+}
+
+
+/*pages css*/
+.title {
+  font-size: 24pt;
+  font-style: italic;
 }
 
 .poem {
