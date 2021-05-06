@@ -21,8 +21,8 @@ const AnnotatedText = ({text,db}) =>{
             'span',
             {
                 className: 'annotated',
-                onMouseOver: setAnnotation(entry.annotation),
-                onMouseLeave: clearAnnotation()
+                onMouseOver: () => setAnnotation(entry.annotation),
+                onMouseLeave: () => clearAnnotation()
             },
             text.substring(entry.start,entry.end)
         )
@@ -52,6 +52,7 @@ const AnnotatedText = ({text,db}) =>{
 
 function setAnnotation(a) {
     var info = document.getElementById('info');
+    console.log(info);
     if (typeof info !== 'undefined' && info !== null) {
         info.innerHTML = a;
         info.removeAttribute('hidden');
@@ -60,7 +61,6 @@ function setAnnotation(a) {
 
 function clearAnnotation() {
     var info = document.getElementById('info');
-    console.log(info);
     if (typeof info !== 'undefined' && info !== null) {
         info.setAttribute('hidden', 'true');
     }
