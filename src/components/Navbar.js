@@ -9,7 +9,7 @@ export default class Navbar extends Component {
             <li><Link to="poems">poems</Link></li>
             <li><Link to="stories">stories</Link></li>
             <li><Link to="code">code</Link></li>
-            <li><Link to="about">about</Link></li>
+            <li><Link to="ruminations">ruminations</Link></li>
           </ul>
         </nav>
       );
