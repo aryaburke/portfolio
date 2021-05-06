@@ -1,9 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   background-color: #181A1B;
-  color: whitesmoke;
+  color: lightgray;
 }
 
 :root {
@@ -52,11 +52,29 @@ body {
 
 
 /*pages css*/
+.story-box{
+  width: 60%;
+}
+
+.poem-box {
+  box-sizing: border-box;
+}
+
 .title {
   font-size: 24pt;
   font-style: italic;
+  padding-bottom: 15px;
 }
 
-.poem {
+.writing {
   font-size: 20pt;
+}
+
+.info {
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 5; /* Stay at the top */
+  left: 100px;
+  overflow-x: hidden; /* Disable horizontal scroll */
 }

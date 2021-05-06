@@ -5,5 +5,5 @@ const Home = () => {
     <div>placeholder</div>
 );
 };
-  
+    
 export default Home;

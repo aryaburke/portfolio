@@ -1,13 +1,13 @@
 import React from "react";
-import { title, text } from "../writing/poem";
+import { title, text } from "../writing/story";
 
-const Poems = () => {
+const Stories = () => {
   return (
-    <div className="poem-box">
+    <div className="story-box">
       <div className="title">{title}</div>
       <div className="writing show-whitespace">{text}</div>
     </div>
 );
 };
   
-export default Poems;
+export default Stories;
