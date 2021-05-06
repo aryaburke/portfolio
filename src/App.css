@@ -59,10 +59,10 @@ body {
   left: calc(var(--writingbox-width) + 5%);
   top: 30%;
   width: calc(90% - var(--writingbox-width));  
-  border: 1px solid var(--main-white);
+  border: 1px dashed var(--main-white);
   position: fixed;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .story-box{
@@ -84,7 +84,7 @@ body {
 }
 
 .annotated {
-  text-decoration: underline;
+  border-bottom: 1px dashed var(--main-white);
 }
 
 .code {

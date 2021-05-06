@@ -1,7 +1,2 @@
 # portfolio
-personal portfolio website
-
-things i would've done given more time:
-made the annotating more robust
-
-!componentDidMount
+A personal portfolio website made with React.js! The bulk of what is normally in a readme is in the site itself.
