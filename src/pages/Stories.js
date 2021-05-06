@@ -11,7 +11,7 @@ const Stories = () => {
           <AnnotatedText text={text} db={db}/>
         </div>
       </div>
-      <div id="info" hidden>hi!</div>
+      <div id="info" hidden></div>
     </div>
 );
 };

@@ -1,11 +1,17 @@
 import React from "react";
-import { title, text } from "../writing/poem";
+import AnnotatedText from "../components/AnnotatedText";
+import { title, text, db } from "../writing/poem";
 
 const Poems = () => {
   return (
-    <div className="poem-box">
-      <div className="title">{title}</div>
-      <div className="writing show-whitespace">{text}</div>
+    <div>
+      <div className="poem-box">
+        <div className="title">{title}</div>
+        <div className="writing show-whitespace">
+          <AnnotatedText text={text} db={db}/>
+        </div>
+      </div>
+      <div id="info" hidden></div>
     </div>
 );
 };

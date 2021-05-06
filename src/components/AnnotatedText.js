@@ -14,7 +14,7 @@ const AnnotatedText = ({text,db}) =>{
             'span',
             {},
             text.substring(lastPos,entry.start)
-        )
+        );
         children.push(precedingText);
 
         var annotated = React.createElement(
@@ -25,7 +25,7 @@ const AnnotatedText = ({text,db}) =>{
                 onMouseLeave: () => clearAnnotation()
             },
             text.substring(entry.start,entry.end)
-        )
+        );
         children.push(annotated);
 
         lastPos = entry.end;
@@ -37,7 +37,7 @@ const AnnotatedText = ({text,db}) =>{
             'span',
             {},
             text.substring(lastPos, text.length)
-        )
+        );
         children.push(finalText);
     };
 
@@ -46,7 +46,7 @@ const AnnotatedText = ({text,db}) =>{
         'div',
         { className: 'annotatedTextBox' },
         children
-    )
+    );
     return(a);
 }
 
