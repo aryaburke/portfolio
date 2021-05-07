@@ -3,9 +3,40 @@ let text = '\tReminds me of the way the mice used to come down from the eaves. I
 
 let db = [
     {
+        /*reminds me of the way...*/
         start: 1,
-        end: 25,
-        annotation: "here i did this thing"
+        end: 64,
+        annotation: "dropping right in to the story with a strange moment in memory"
+    },
+    {
+        /*novella magicka*/
+        start: 194,
+        end: 210,
+        annotation: "subtle worldbuildingof the strange and magical"
+    },
+    {
+        /*i imagine a lot of mice suffocated...*/
+        start: 818,
+        end: 900,
+        annotation: "getting us into the narrator's head through their feelings and voice about the disturbing situation"
+    },
+    {
+        /*it's the only way*/
+        start: 1287,
+        end: 1380,
+        annotation: "the story revolves around this intensely strange logic, of horror made incarnate"
+    },
+    {
+        /*it used to be a music box...*/
+        start: 2544,
+        end: 2645,
+        annotation: "an ominous object, its purpose cut from it"
+    },
+    {
+        /*i jumped out the window...*/
+        start: 3105,
+        end: 3182,
+        annotation: "leaving space to continue, to imagine what may happen to danish"
     }
 ]
 
