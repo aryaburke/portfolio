@@ -2,9 +2,41 @@ let text = "const AnnotatedText = ({text,db}) =>{\n\tlet children = [];\n\tlet l
 
 let db = [
     {
-        start: 1,
-        end: 25,
-        annotation: "here i did this thing"
+        /*AnnotatedText*/
+        start: 6,
+        end: 33,
+        annotation: "AnnotatedText is the function that takes a string and a database of annotations and returns a React component corresponding to the annotated text! it's the actual code used to annotate this right now. it's great because it functions on any text that has accompany annotations"
+    },
+    {
+        /*precedingText*/
+        start: 139,
+        end: 152,
+        annotation: 'precedingText is the text before an annotation'
+    },
+
+    {
+        /*annotated*/
+        start: 276,
+        end: 285,
+        annotation: 'annotated is the annotated text element. annotations are denoted by their start and end character indexes.'
+    },
+    {
+        /*setAnnotation*/
+        start: 376,
+        end: 389,
+        annotation: 'setAnnotation and clearAnnotation (below) are functions to change the box that this info appears in'
+    },
+    {
+        /*finalText*/
+        start: 600,
+        end: 609,
+        annotation: 'finalText handles the text between the last annotation and the end' 
+    },
+    {
+        /*children*/
+        start:806,
+        end:814,
+        annotation: 'the array of child spans we created is being passed to a parent span as children, creating a single React element to return. i chose to do it this way because that way we can move through the whole text, separating it using the annotations as a guide, before compiling it together.'
     }
 ]
 
